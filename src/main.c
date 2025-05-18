@@ -2,7 +2,6 @@
 #include <math.h>
 #include <stdlib.h>
 
-int asz;
 int* compute_prime_n(long long);
 long long compute_fact(long long);
 
@@ -51,8 +50,6 @@ int* compute_prime_n(long long n)
     }
   }
 
-  asz=n+1;
-
   return a;
 }
 
@@ -66,7 +63,7 @@ int main()
   scanf("%lld", &n);
 
   p=compute_prime_n(n);
-  s=asz;
+  s=n;
 
   while(i<s)
   {
